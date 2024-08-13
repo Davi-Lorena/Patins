@@ -76,8 +76,8 @@ transform: scaleX(1);
 }
 
 & img {
-    width: 100%;
-    height: auto;
+    width: 1.5rem;
+    aspect-ratio: 1;
 }
 
 
@@ -99,4 +99,28 @@ transform: scaleX(1);
     }
     }
 
+}
+
+@media (width < 1024px) {
+    footer {
+        padding: 3rem 1.5rem 1.5rem;
+        max-width: 375px;
+      display: grid;
+        gap: 3rem;
+    
+    & nav {
+        
+        flex-direction: column;
+    }
+
+    & .social-links {
+        
+        & a {
+            width: 2rem;
+            height: 2rem;
+            }
+    }
+    
+
+    }
 }

@@ -44,3 +44,9 @@ border-radius: 50%;
 }
 
 }
+
+@media (width < 1024px) {
+    nav.one {
+        max-width: 375px;
+    }
+}

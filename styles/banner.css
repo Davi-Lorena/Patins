@@ -40,3 +40,9 @@
 transform: translateX(-132px);
     }
 }
+
+@media (width < 1024px) {
+    .banner {
+        padding-block: 1.5rem;
+    }
+}

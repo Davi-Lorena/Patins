@@ -110,3 +110,30 @@ background: linear-gradient(
         transform: translateY(100%);
     }
 }
+
+@media (width < 1024px) {
+section.gallery {
+    max-width: 375px;
+    padding: 1.5rem;
+    margin-inline: auto;
+
+   & .content {
+    margin-top: 1.5rem;
+        gap: 1.5rem;
+    justify-content: center;
+    grid-template-areas: 
+    "A"
+    "B"
+    "C"
+    "D";
+        & figure {
+          & > img {
+            width: 19.5rem;
+            height: 16rem;
+            }
+         }
+    } 
+}
+
+}
+
